@@ -1,0 +1,122 @@
+/* 
+
+here is the class list available in the dom
+
+number          class           description
+-------         ------------    -----------
+0               sourceBar       this is where the user enters the video source (absolute or relative)
+1               leftAside       this is where the video list will populate thumnails for the next video
+2               canvasVideo     this is where the canvas will overlay on the video to telestrate
+3               rightAside      this is where the control for the pen tools will be
+4               controlBar      this is where the video and animation control buttons are
+
+*/
+
+/*
+.sourceBar, .leftAside, .canvasVideo, .rightAside, .controlBar {
+    border: solid 1px green;
+} */
+
+div.sourceBar {
+    background-color: #ffffff;
+    position: relative;
+    /*top: 120px;*/
+    top: 10px;
+}
+
+div.sourceBar .urlInputBar {
+    min-width: 960px;
+    height: 25px;
+    /*
+    padding-right: 5%;
+    margin-right: 1%;
+    */
+    padding-left: 0%;
+    margin-left: 6%;
+    
+}
+
+div.mainContainer {
+    background-color: #ffffff;
+
+}
+
+aside.leftAside {
+    float: left;
+    position: relative;
+}
+
+aside.rightAside {
+    float: right;
+    position: relative;
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+div.canvasVideo {
+    align-content: center;
+    max-width: 960px;
+    height: auto;
+    position: relative;
+}
+
+div.controlBar {
+    float: inherit;
+    top: 150px;
+    position: relative;
+    width: auto;
+}
+
+.iframeStyle {
+    width: 960px;
+    height:540px;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.rightAside li {
+    list-style-type: none;  
+}
+
+.rightAside button {
+/*  min-width: 100px;
+    min-height: 50px; */
+    
+    width:150px;
+    height: 75px;
+    background-color: #ffffff;
+    color: blue;
+    transition: background-color .5s;
+
+
+}
+
+button:hover {
+    background-color: red;
+    color: #ffffff;
+}
+/* */
+/* 
+once you are ready for responsive design you'll need to address these three screen size parameters
+
+
+@media (min-width: 768px) {
+  ".className" {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  ".className" {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  ".className" {
+    width: 1170px;
+  }
+}
+*/
