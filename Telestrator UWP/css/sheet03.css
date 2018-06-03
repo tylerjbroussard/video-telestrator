@@ -38,3 +38,16 @@ div.mainContain {
     display: flex;
     justify-content: center;
 }
+
+div video{
+    position: relative;
+    right: -300px;
+    z-index: 1;
+}
+
+div canvas.canvasOverlay {
+    float: left;
+    position: relative;
+    z-index: 2;
+    left: -200px;
+}
