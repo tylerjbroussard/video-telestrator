@@ -73,6 +73,8 @@
     <Content Include="images\Wide310x150Logo.scale-200.png" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\canvasAPI.js" />
+    <Content Include="js\draw.js" />
+    <Content Include="js\easeljs-NEXT.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />

@@ -7,42 +7,44 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/sheet03.css" rel="stylesheet" />
 </head>
-    <body>
-        <div class="sourceBar mainContain">
-            <input class="urlInputBar" name="urlVideo" type="url" value="enter url">
-        </div>
-        <br />
-        <div class="mainContain">
-            
-            <aside class="leftAside"></aside>
+<body onload="init();">
+    <div class="sourceBar mainContain">
+        <input class="urlInputBar" name="urlVideo" type="url" value="enter url">
+    </div>
+    <br />
+    <div class="mainContain">
 
-            <video id="mainVideo" class="" src="" ></video>
+        <aside class="leftAside"></aside>
+        <canvas id="myCanvas" class="absolute01" width="960" height="540"></canvas>
+        <video id="mainVideo" class="" src=""></video>
 
-            <aside class="rightAside">
-                <ul class="menuButtons">
-                    <li>
-                        <button name="Play button" id="pressPlay">Play</button>
-                    </li>
-                    <li>
-                        <button name="Pause button" id="pressPause">Pause</button>
-                    </li>
-                    <li>
-                        <button name="Draw button" id="pressDraw">Draw</button>
-                    </li>
-                    <li>
-                        <button name="Screenshot button" id="pressScreenShot">Screenshot</button>
-                    </li>
-                    <li>
-                        <button name="Clear Screen" id="pressClear">Clear</button>
-                    </li>
-                </ul>
-            </aside>
+        <aside class="rightAside">
+            <ul class="menuButtons">
+                <li>
+                    <button name="Play button" id="pressPlay">Play</button>
+                </li>
+                <li>
+                    <button name="Pause button" id="pressPause">Pause</button>
+                </li>
+                <li>
+                    <button name="Draw button" id="pressDraw">Draw</button>
+                </li>
+                <li>
+                    <button name="Screenshot button" id="pressScreenShot">Screenshot</button>
+                </li>
+                <li>
+                    <button name="Clear Screen" id="pressClear">Clear</button>
+                </li>
+            </ul>
+        </aside>
 
-        </div>
+    </div>
 
-        <div class="controlBar"></div>
+    <div class="controlBar"></div>
 
-        <script src="js/main.js"></script>
-    </body>
+    <script src="js/main.js"></script>
+    <script src="js/easeljs-NEXT.min.js"></script>
+    <script src="js/draw.js"></script>
+</body>
 </html>
 
