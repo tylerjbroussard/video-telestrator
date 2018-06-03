@@ -1,20 +1,21 @@
-﻿//var videoPlayer = document.getElementById("mainVideo");
+﻿//variable list
+var videoPlayer = document.getElementById("mainVideo"),
+    video01 = "https://mediaplatstorage1.blob.core.windows.net/windows-universal-samples-media/elephantsdream-clip-h264_sd-aac_eng-aac_spa-aac_eng_commentary-srt_eng-srt_por-srt_swe.mkv",
+    playButton = document.getElementById("pressPlay"),
+    pauseButton = document.getElementById("pressPause"),
+    drawButton = document.getElementById("pressDraw"),
+    screenShotButton = document.getElementById("pressScreenShot"),
+    clearButton = document.getElementById("pressClear");
 
-//var video01 = "https://mediaplatstorage1.blob.core.windows.net/windows-universal-samples-media/elephantsdream-clip-h264_sd-aac_eng-aac_spa-aac_eng_commentary-srt_eng-srt_por-srt_swe.mkv";
 
-//var playVideo = function (a) {
-//    videoPlayer.pause();            
-//    videoPlayer.setAttribute("src", (a));                            
-//};
-
-//playVideo(video01);
-
+//IIFE to play media
 (function () {
     'use strict';
-
-    var videoPlayer = document.getElementById("mainVideo");
-    var video01 = "https://mediaplatstorage1.blob.core.windows.net/windows-universal-samples-media/elephantsdream-clip-h264_sd-aac_eng-aac_spa-aac_eng_commentary-srt_eng-srt_por-srt_swe.mkv";
-
-    videoPlayer.pause();
-    videoPlayer.setAttribute("src", (video01));    
+    videoPlayer.setAttribute("src", (video01));
+    playButton.addEventListener("click", function () {
+        videoPlayer.play()
+    }, false);
+    pauseButton.addEventListener("click", function () {
+        videoPlayer.pause()
+    }, false);
 })();
