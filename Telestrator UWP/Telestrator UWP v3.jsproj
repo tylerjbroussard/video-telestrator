@@ -79,6 +79,7 @@
     <Content Include="js\main.js" />
     <Content Include="css\default.css" />
     <Content Include="js\masterscript.js" />
+    <Content Include="packages.config" />
     <Content Include="utils\scenario1.html" />
     <None Include="Telestrator UWP_TemporaryKey.pfx" />
   </ItemGroup>

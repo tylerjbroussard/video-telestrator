@@ -7,9 +7,9 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/sheet03.css" rel="stylesheet" />
 </head>
-<body onload="init();">
+<body id="bodyLoad">
     <div class="sourceBar mainContain">
-        <input class="urlInputBar" name="urlVideo" type="url" value="enter url">
+        <!--<input class="urlInputBar" name="urlVideo" type="url" value="enter url">-->
     </div>
     <br />
     <div class="mainContain">
@@ -20,6 +20,9 @@
 
         <aside class="rightAside">
             <ul class="menuButtons">
+                <li>
+                    <button class="open" id="videoOpen">Pick Video</button>
+                </li>
                 <li>
                     <button name="Play button" id="pressPlay">Play</button>
                 </li>
@@ -37,7 +40,6 @@
                 </li>
             </ul>
         </aside>
-
     </div>
 
     <div class="controlBar"></div>

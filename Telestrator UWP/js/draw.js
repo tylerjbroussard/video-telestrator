@@ -1,16 +1,33 @@
-﻿var canvas, stage;
-var drawingCanvas;
-var oldPt;
-var oldMidPt;
-var title;
-var color;
-var stroke;
-var colors;
-var index;
+﻿//variable list
+var canvas,
+    stage,
+    drawingCanvas,
+    oldPt,
+    oldMidPt,
+    title,
+    color,
+    stroke,
+    colors,
+    index,
+    drawButton = document.getElementById("pressDraw"),
+    loadOnBody = document.getElementById("bodyLoad"),
+    clearButton = document.getElementById("pressClear");
+
+    
+//IIFE to play media
+(function () {
+    'use strict';
+    drawButton.addEventListener("click", init, false);
+    clearButton.addEventListener("click", function () {
+        stage.clear();
+    }, false);
+})();
 
 function init() {
     canvas = document.getElementById("myCanvas");
     index = 0;
+
+    //pen color
     colors = ["yellow"];
 
     //check to see if we are running in a browser with touch support
@@ -26,8 +43,8 @@ function init() {
     stage.addEventListener("stagemousedown", handleMouseDown);
     stage.addEventListener("stagemouseup", handleMouseUp);
 
-    title = new createjs.Text("Click and Drag to draw", "36px Arial", "yellow");
-    title.x = 300;
+    title = new createjs.Text("Canvas Here", "36px Arial", "yellow");
+    title.x = 100;
     title.y = 200;
     stage.addChild(title);
 
