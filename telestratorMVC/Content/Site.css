@@ -1,0 +1,77 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.rightAside li {
+    list-style-type: none;
+}
+
+.rightAside button {
+    /*  min-width: 100px;
+    min-height: 50px; */
+    width: 150px;
+    height: 75px;
+    background-color: #ffffff;
+    color: blue;
+    transition: background-color .5s;
+}
+
+div.sourceBar {
+    background-color: #ffffff;
+    position: relative;
+    /*top: 120px;*/
+    top: 15px;
+    left: 15px;
+}
+
+    div.sourceBar .urlInputBar {
+        min-width: 900px;
+        height: 25px;
+        /*
+    padding-right: 5%;
+    margin-right: 1%;
+    padding-left: 0%;
+    margin-left: 6%;
+    */
+    }
+
+
+div.mainContain {
+    display: flex;
+    justify-content: center;
+}
+
+div video {
+    position: relative;
+    right: -300px;
+    z-index: 1;
+}
+
+div canvas.canvasOverlay {
+    float: left;
+    position: relative;
+    z-index: 2;
+    left: -200px;
+}
+
