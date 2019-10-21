@@ -1,12 +1,14 @@
-﻿@{
+﻿@*https://developer.mozilla.org/en-US/docs/Web/API/FileReader/load_event*@
+@*https://developer.mozilla.org/en-US/docs/Web/API/FileReader/FileReader*@
+
+@{
     ViewBag.Title = "Home Page";
 }
 
-
-    <div class="sourceBar mainContain">
-        <!--<input class="urlInputBar" name="urlVideo" type="url" value="enter url">-->
-    </div>
-    <br />
+<br />
+<br />
+<br />
+<div class="container">
     <div class="mainContain">
 
         <aside class="leftAside"></aside>
@@ -16,7 +18,9 @@
         <aside class="rightAside">
             <ul class="menuButtons">
                 <li>
-                    <button class="open" id="videoOpen">Pick Video</button>
+                    <!--Hidden input for finding files on users machine-->
+                    <input id="hiddenInput" value="Pick Video" type="file" accept="video/*" style="display:none">
+                    <button class="open" id="videoPick">Pick Video</button>
                 </li>
                 <li>
                     <button name="Play button" id="pressPlay">Play</button>
@@ -36,6 +40,4 @@
             </ul>
         </aside>
     </div>
-
-    <div class="controlBar"></div>
-
+</div>

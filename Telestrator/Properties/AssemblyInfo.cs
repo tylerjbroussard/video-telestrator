@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("telestratorMVC")]
+[assembly: AssemblyTitle("Telestrator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard Company")]
-[assembly: AssemblyProduct("telestratorMVC")]
+[assembly: AssemblyProduct("Telestrator")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard Company 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c43c60aa-95e3-45ac-b811-07d51bbb8c69")]
+[assembly: Guid("9eaa9652-4672-4faa-846c-9c09a0c139c2")]
 
 // Version information for an assembly consists of the following four values:
 //
