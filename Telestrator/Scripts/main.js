@@ -7,6 +7,8 @@ var videoPlayer = document.getElementById("mainVideo"),
     loadOnBody = document.getElementById("bodyLoad"),
     pickVideoButton = document.getElementById("videoPick"),
     inputButton = document.getElementById("hiddenInput"),
+    urlBar = document.getElementById("videoUrl"),
+    urlButton = document.getElementById("urlButton");
     pickVideo = function () {
 
         inputButton.click();
@@ -24,7 +26,12 @@ var videoPlayer = document.getElementById("mainVideo"),
         }, false);
 
 
-    }; 
+};
+
+var changevideo = function () {
+    var url = urlBar.value;
+    videoPlayer.setAttribute("src", url);
+};
 
 //IIFE to play media
 (function () {
@@ -38,5 +45,8 @@ var videoPlayer = document.getElementById("mainVideo"),
     }, false);
     pickVideoButton.addEventListener("click", function () {
         pickVideo();
+    }, false);
+    urlButton.addEventListener("click", function () {
+        changevideo();
     }, false);
 })();
