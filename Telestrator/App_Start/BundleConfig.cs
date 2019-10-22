@@ -25,7 +25,11 @@ namespace Telestrator
             bundles.Add(new ScriptBundle("~/bundles/original").Include(
                       "~/Scripts/main.js",
                       "~/Scripts/draw.js",
-                      "~/Scripts/easeljs-NEXT.min.js"));
+                      "~/Scripts/easeljs-NEXT.min.js",
+                      "~/Scripts/mainscript.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ts").Include(
+                      "~/Scripts/test.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
