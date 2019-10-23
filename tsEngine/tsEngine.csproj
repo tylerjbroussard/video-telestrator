@@ -66,7 +66,11 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="main.js" />
+    <Content Include="main2.js" />
+    <Content Include="plyr.html" />
     <Content Include="Web.config" />
+    <Content Include="youtube.html" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
