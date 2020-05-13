@@ -7,7 +7,7 @@ var videoPlayer = document.getElementById("mainVideo"),
     loadOnBody = document.getElementById("bodyLoad"),
     videoButton = document.getElementById("videoOpen"),
     pickVideo = function () {
-        var openPicker = new Windows.Storage.Pickers.FileOpenPicker();
+       /* var openPicker = new Windows.Storage.Pickers.FileOpenPicker();
         openPicker.viewMode = Windows.Storage.Pickers.PickerViewMode.thumbnail;
         openPicker.suggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.videosLibrary;
         openPicker.fileTypeFilter.replaceAll([".mp4", ".mkv", ".avi"]);
@@ -17,6 +17,7 @@ var videoPlayer = document.getElementById("mainVideo"),
                 //var video = document.getElementById("mainVideo");
                 videoPlayer.src = URL.createObjectURL(file, { oneTimeOnly: true });
             });
+            */
     }; 
 
 //IIFE to play media

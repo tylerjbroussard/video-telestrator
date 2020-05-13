@@ -5,47 +5,36 @@
 </head>
 
   
-  <body id="bodyLoad">
-    <% include ../partials/nav.ejs %>
-      <div class="sourceBar mainContain">
-          <!--<input class="urlInputBar" name="urlVideo" type="url" value="enter url">-->
-      </div>
-      <br />
-      <div class="mainContain">
-  
-          <aside class="leftAside"></aside>
-          <video id="mainVideo" class="" src=""></video>
-          <canvas id="myCanvas" class="canvasOverlay" width="400" height="400"></canvas>
-  
-          <aside class="rightAside">
-              <ul class="menuButtons">
-                  <li>
-                      <button class="open" id="videoOpen">Pick Video</button>
-                  </li>
-                  <li>
-                      <button name="Play button" id="pressPlay">Play</button>
-                  </li>
-                  <li>
-                      <button name="Pause button" id="pressPause">Pause</button>
-                  </li>
-                  <li>
-                      <button name="Draw button" id="pressDraw">Draw</button>
-                  </li>
-                  <li>
-                      <button name="Screenshot button" id="pressScreenShot">Screenshot</button>
-                  </li>
-                  <li>
-                      <button name="Clear Screen" id="pressClear">Clear</button>
-                  </li>
-              </ul>
-          </aside>
-      </div>
-  
-      <div class="controlBar"></div>
-  
-      <script src="/scripts/main.js"></script>
-      <script src="/scripts/easeljs-NEXT.min.js"></script>
-      <script src="/scripts/draw.js"></script>
+  <body>
 
-</body>
+    <div class="container">
+      <div class="container">        
+        
+        <!-- Input to ente video URL this dictates what JS write to the video space div-->
+        <form>
+          <div class="form-group">            
+            <input type="text" class="form-control" name="videoUrl" placeholder="Enter Video URL" required autofocus>
+          </div>          
+          <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="container">
+
+        <div id="videoSpace" class="container"> 
+          
+
+          
+        </div>
+      
+      </div>
+
+    </div>
+    
+      
+
+  </body>
 </html>

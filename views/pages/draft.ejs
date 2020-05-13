@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+  
+  <body id="bodyLoad">
+      <div class="container-fluid">
+
+          <div class="sourceBar mainContain">
+              <input class="urlInputBar" name="urlVideo" type="url" value="enter url">
+            </div>
+      <br />
+      <div class="mainContain">
+          
+          <aside class="leftAside"></aside>
+
+          <!--Video Tag Section -->
+          <video id="mainVideo" class="" src=""></video>
+
+          <canvas id="myCanvas" class="canvasOverlay" width="400" height="400"></canvas>
+          
+          <aside class="rightAside">
+              <ul class="menuButtons">
+                  <li>
+                      <button class="open" id="videoOpen">Pick Video</button>
+                    </li>
+                    <li>
+                        <button name="Play button" id="pressPlay">Play</button>
+                  </li>
+                  <li>
+                      <button name="Pause button" id="pressPause">Pause</button>
+                    </li>
+                    <li>
+                        <button name="Draw button" id="pressDraw">Draw</button>
+                    </li>
+                  <li>
+                      <button name="Screenshot button" id="pressScreenShot">Screenshot</button>
+                    </li>
+                    <li>
+                        <button name="Clear Screen" id="pressClear">Clear</button>
+                    </li>
+                </ul>
+          </aside>
+        </div>
+    </div>  
+        
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <!--plyr video js-->
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/easeljs-NEXT.min.js"></script>
+    <script src="/js/draw.js"></script>
+
+</body>
+</html>
