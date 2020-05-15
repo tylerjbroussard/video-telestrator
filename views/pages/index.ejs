@@ -13,7 +13,7 @@
         <!-- Input to ente video URL this dictates what JS write to the video space div-->
         <form>
           <div class="form-group">            
-            <input type="text" class="form-control" name="videoUrl" placeholder="Enter Video URL" required autofocus>
+            <input id="urlBar" type="text" class="form-control" name="videoUrl" placeholder="Enter Video URL" required autofocus>
           </div>          
           <div>
             <button id="urlSubmit" type="submit" class="btn btn-primary">Submit</button>
@@ -25,7 +25,30 @@
 
       <div id="videoSpace" class="container">
           
-          <!--<div id="player" data-plyr-provider="youtube" data-plyr-embed-id="nIkHXY1QbVE">         -->
+          <!--<div id="player" data-plyr-provider="youtube" data-plyr-embed-id="nIkHXY1QbVE">-->
+            
+            
+            <div class="plyr__video-embed" id="player">
+              <iframe id='iframeVideo'
+                src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay"
+              ></iframe>
+            </div>
+
+          <!--
+
+            <div class="plyr__video-embed" id="player">
+              <iframe
+              src="https://player.vimeo.com/video/76979871?loop=false&amp;byline=false&amp;portrait=false&amp;title=false&amp;speed=true&amp;transparent=0&amp;gesture=media"
+              allowfullscreen
+              allowtransparency
+              allow="autoplay"
+              ></iframe>
+            </div>
+            
+          -->
 
           </div>
                 
