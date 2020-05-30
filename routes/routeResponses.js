@@ -1,6 +1,6 @@
 module.exports = {
   mainGetResponse: (req, res) => {
-    let testVideo = "https://www.youtube.com/watch?v=cXE586A-7Do";
+    let testVideo = "https://player.vimeo.com/video/40648169";
 
     let urlUpdate;
 
