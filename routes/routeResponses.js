@@ -32,3 +32,16 @@ module.exports = {
     });
   },
 };
+
+/* 
+
+need to parse input url from 
+
+https://vimeo.com/40648169
+
+to
+
+https://player.vimeo.com/video/40648169"
+
+
+*/
