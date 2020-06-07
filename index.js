@@ -20,5 +20,5 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", mainGetResponse);
 app.get("/main", mainGetResponse);
 app.post("/main", mainPostResponse);
-app.get("/draft", (req, res) => res.render("pages/draft"));
+//app.get("/draft", (req, res) => res.render("pages/draft"));
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));

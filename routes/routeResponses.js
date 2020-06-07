@@ -16,6 +16,17 @@ module.exports = {
     console.log(`Video URL input: ${req.body.videoUrl}`);
     let s_userInput = req.body.videoUrl;
 
+    let vimeo = /vimeo/;
+
+    //let regexpres = new RegExp(vimeo);
+
+    if (s_userInput.search(vimeo) != -1) {
+      let id = s_userInput.split(/vimeo.com/);
+      console.log(id);
+      s_userInput = `https://player.vimeo.com/video${id[1]}`;
+      console.log(`New s_userInput = ${s_userInput}`);
+    }
+
     let testVideo = "https://www.youtube.com/watch?v=cXE586A-7Do";
 
     let urlUpdate;
@@ -42,6 +53,13 @@ https://vimeo.com/40648169
 to
 
 https://player.vimeo.com/video/40648169"
+
+
+Regex test
+
+
+
+
 
 
 */
