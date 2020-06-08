@@ -20,7 +20,7 @@ module.exports = {
 
     //let regexpres = new RegExp(vimeo);
 
-    if (s_userInput.search(vimeo) != -1) {
+    if (s_userInput.search(vimeo) !== -1) {
       let id = s_userInput.split(/vimeo.com/);
       console.log(id);
       s_userInput = `https://player.vimeo.com/video${id[1]}`;
@@ -31,7 +31,7 @@ module.exports = {
 
     let urlUpdate;
 
-    if (s_userInput != undefined) {
+    if (s_userInput !== undefined) {
       urlUpdate = s_userInput;
     } else {
       urlUpdate = testVideo;
@@ -44,9 +44,9 @@ module.exports = {
   },
 };
 
-/* 
+/*
 
-need to parse input url from 
+need to parse input url from
 
 https://vimeo.com/40648169
 
